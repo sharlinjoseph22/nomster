@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 @import "bootstrap";
 
     .booyah-box {
@@ -21,6 +22,11 @@
       body {
           background: image_url('concrete-texture.png');
           font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+      }
+
+      .navbar-inverse .navbar-brand {
+        color: #F3CEC3;
+        font-family: 'Monoton', cursive;
       }
 
       
