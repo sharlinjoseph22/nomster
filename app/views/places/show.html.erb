@@ -3,6 +3,33 @@
     <i><%= @place.address%></i>
     <br/><br/>
     <p><%= @place.description%></p>
+
+   <% if @place.latitude.present? && @place.longitude.present? %>
+    <script>
+      "use strict";
+
+      function initMap() {
+        const myLatLng = {lat: <%= @place.latitude %>, lng: <%= @place.longitude %>};
+
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 12,
+          center: myLatLng
+        });
+        new google.maps.Marker({
+          position: myLatLng,
+          map,
+          title: "Hello World!"
+        });
+      }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSEXhnkSkLQz3-YIXSDLWg4nFG8x_qoRI&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <div id="map"></div>
+    <br/>
+<% end %>
  <div class="float-right custom_show">
    <% if current_user && current_user == @place.user%>
     <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-primary' %>
