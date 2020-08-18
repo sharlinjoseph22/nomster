@@ -49,7 +49,8 @@
       
     .custom_show {
         position: relative;
-        bottom: 43px;
+        bottom: 0px;
+
     }
     
     .invalid-feedback {
@@ -85,3 +86,13 @@
     blockquote p {
       display: inline;
     }
+
+   .photo {
+     margin-left: 4px;
+     font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+   }
+
+   .comment {
+    font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+
+   }
