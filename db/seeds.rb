@@ -1,6 +1,6 @@
 User.create!([
-  {email: "test@test.com", password: "", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil},
-  {email: "debug8009@gmail.com", password: "", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil}
+  {email: "test@test.com", password: "password", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil},
+  {email: "debug8009@gmail.com", password: "password", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil}
 ])
 Comment.create!([
   {message: "Amazing place for food and service!", rating: "5_stars", user_id: 2, place_id: 4},
