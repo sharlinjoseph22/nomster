@@ -2,7 +2,7 @@ User.create!([
   {email: "test@test.com", password: "", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil},
   {email: "debug8009@gmail.com", password: "", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil}
 ])
-Comment.create!([heroku pg:reset DATABASE_URL
+Comment.create!([
   {message: "Amazing place for food and service!", rating: "5_stars", user_id: 2, place_id: 4},
   {message: "This place never disappoints. Been here about 3 times now and I keep coming back. Highly recommend!", rating: "5_stars", user_id: 2, place_id: 5},
   {message: "Service and staff were amazing. Even better food! Will definitely be coming back. ", rating: "5_stars", user_id: 2, place_id: 4},
